@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询防伪码信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1eb2cf; /* 背景颜色 */
+            margin: 50px;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px; /* 设置表单的最大宽度 */
+        }
+        .form-section {
+            display: flex;
+            justify-content: space-between; /* 在标签和信息之间留出空间 */
+            margin-bottom: 20px; /* 增大各项之间的间距 */
+        }
+        .form-label {
+            font-weight: bold;
+            width: 30%;
+            text-align: left; /* 左对齐标签 */
+        }
+        .form-value {
+            width: 70%;
+            text-align: left; /* 左对齐值 */
+        }
+        .query-count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form-section">
+            <div class="form-label">防伪码</div>
+            <div class="form-value">30004736</div>
+        </div>
+        <div class="form-section">
+            <div class="form-label">首次查询</div>
+            <div class="form-value">2024-5-25 07:37:07</div>
+        </div>
+        <div class="form-section">
+            <div class="form-label">品牌</div>
+            <div class="form-value">shancai</div>
+        </div>
+        <div class="form-section">
+            <div class="form-label">产品编号</div>
+            <div class="form-value">50799</div>
+        </div>
+        <div class="form-section">
+            <div class="form-label">查询次数</div>
+            <div class="form-value">
+                <div class="query-count" id="query-count">1</div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var queryCount = localStorage.getItem('queryCount') || 0;
+            queryCount++;
+            document.getElementById('query-count').textContent = queryCount;
+            localStorage.setItem('queryCount', queryCount);
+        });
+    </script>
+
+<a href="https://m.1688.com/winport/b2b-2123073290.html?memberId=b2b-2123073290&__removesafearea__=1&src_cna=Y4AwH8h+RU4BASQIhFY3/r77&isVisited=true" target="_blank">巴斯夫涂料1688品牌站</a> <br/>
+<a href="https://m.1688.com/winport/b2b-2123073290.html?memberId=b2b-2123073290&__removesafearea__=1&src_cna=Y4AwH8h+RU4BASQIhFY3/r77&isVisited=true" target="_blank">
+    <img src="basf.jpg" alt="巴斯夫涂料1688品牌站" class="link-image">
+</a> <br/>
+</body>
+</html>
